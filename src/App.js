@@ -1,14 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
+import BusinessForm from "./BusinessForm";
 
 function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<h1>Welcome to My First React App!</h1>
-			</header>
-		</div>
-	);
+	return <BusinessForm></BusinessForm>;
 }
 
 export default App;

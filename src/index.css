@@ -1,13 +1,144 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+/* General Form Layout */
+form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f8f9fa;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+/* Header Titles */
+form h2,
+form h3,
+form h4,
+form h5 {
+	font-size: 1.25rem;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+/* Input Fields */
+form label {
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 15px;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+	padding: 10px;
+	font-size: 1rem;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+form textarea {
+	resize: vertical;
+}
+
+/* Button Styling */
+form button {
+	background-color: #007bff;
+	color: white;
+	font-size: 0.9rem;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+form button:hover {
+	background-color: #0056b3;
+}
+
+/* Nested Section Styling */
+form div {
+	margin-bottom: 20px;
+}
+
+/* Consistent Spacing for Nested Fields */
+form div div {
+	margin-left: 20px;
+}
+
+/* Styling for Dynamic Add Buttons */
+form button[type="button"] {
+	background-color: #28a745;
+	color: white;
+	margin-top: 5px;
+}
+
+form button[type="button"]:hover {
+	background-color: #218838;
+}
+
+/* Styling the suggestions dropdown */
+.suggestions {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	max-height: 150px;
+	overflow-y: auto;
+	background-color: white;
+}
+
+.suggestions li {
+	padding: 8px;
+	cursor: pointer;
+}
+
+.suggestions li:hover {
+	background-color: #007bff;
+	color: white;
+}
+
+/* Tag styling */
+.tags-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.tag {
+	background-color: #007bff;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 15px;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.tag button {
+	background: none;
+	border: none;
+	color: white;
+	margin-left: 5px;
+	cursor: pointer;
+	font-weight: bold;
 }
